@@ -6,6 +6,7 @@ sudo service klipper stop
 cd ~/klipper
 
 # Update mcu rpi
+
 echo "Start update mcu rpi"
 echo ""
 make clean KCONFIG_CONFIG=/home/pi/klipper_config/script/config.host
@@ -30,10 +31,10 @@ echo ""
 # Update mcu Z
 echo "Start update mcu Z"
 echo ""
-#make clean KCONFIG_CONFIG=/home/pi/klipper_config/script/config.skr13Z
+make clean KCONFIG_CONFIG=/home/pi/klipper_config/script/config.skr13Z
 #make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.skr13Z
-#make -j $CORES KCONFIG_CONFIG=/home/pi/klipper_config/script/config.skr13Z
-#read -p "mcu XYE firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+make -j $CORES KCONFIG_CONFIG=/home/pi/klipper_config/script/config.skr13Z
+read -p "mcu XYE firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 ./scripts/flash-sdcard.sh /dev/serial/by-id/usb-Klipper_lpc1768_13FC0F0F93235253B409F34C020000F5-if00 btt-skr-v1.3
 echo "Finish update mcu Z"
 echo ""

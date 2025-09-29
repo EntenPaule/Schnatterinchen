@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 450 393" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" >
+
+<path d="M286.718,107.235l-186.983,284.88l-99.735,-0.105l258.225,-392.01c5.91,36.795 15.675,73.26 28.493,107.235" style="fill:#f00;fill-rule:nonzero;">
+
+	<animateTransform 
+		attributeName="transform" 
+		repeatCount="indefinite" begin="0s"
+		type="scale" 
+		keyTimes="0;0.5;1" values="1;0.9;1"
+		calcMode="spline" dur="3s"
+		keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>
+	
+	<animate
+	attributeName="opacity"
+	repeatCount="indefinite" begin="0s"
+	
+	keyTimes="0;0.5;1" values="1;0.2;1"
+	calcMode="spline" dur="3s"
+	keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>	
+</path>
+
+<path d="M309.96,160.155l-153.585,232.035l99.705,0.142l101.273,-154.747c-17.835,-24.367 -33.705,-50.257 -47.393,-77.43" style="fill:#f00;fill-rule:nonzero;">
+
+	<animateTransform 
+		attributeName="transform" 
+		repeatCount="indefinite" begin="0.2s"
+		type="scale" 
+		keyTimes="0;0.5;1" values="1;0.9;1"
+		calcMode="spline" dur="3s"
+		keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>
+	
+	<animate
+	attributeName="opacity"
+	repeatCount="indefinite" begin="0.2s"
+	
+	keyTimes="0;0.5;1" values="1;0.2;1"
+	calcMode="spline" dur="3s"
+	keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>	 
+</path>
+
+<path d="M449.535,335.768l-36.938,56.564l-99.847,-0.217l76.2,-115.253c18.66,21.15 38.918,40.845 60.585,58.905Z" style="fill:#f00;fill-rule:nonzero;">
+
+	<animateTransform 
+		attributeName="transform" 
+		repeatCount="indefinite" begin="0.4s"
+		type="scale" 
+		keyTimes="0;0.5;1" values="1;0.9;1"
+		calcMode="spline" dur="3s"
+		keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>
+	
+	<animate
+	attributeName="opacity"
+	repeatCount="indefinite" begin="0.4s"
+	
+	keyTimes="0;0.5;1" values="1;0.2;1"
+	calcMode="spline" dur="3s"
+	keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" 
+	/>	 
+</path>
+
+</svg>

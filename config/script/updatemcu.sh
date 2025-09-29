@@ -35,7 +35,7 @@ make -j $CORES KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.skr13
 echo "Finish update mcu XYE and Z"
 echo ""
 
-# Update mcu Z
+## Update mcu Z
 #echo "Start update mcu Z"
 #echo ""
 #make clean KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.skr13Z

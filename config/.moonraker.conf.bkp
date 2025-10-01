@@ -9,10 +9,9 @@ enable_object_processing = False
 
 [authorization]
 cors_domains = 
-	https://my.mainsail.xyz
-	http://my.mainsail.xyz
 	http://*.local
 	http://*.lan
+	http://mainsail
 trusted_clients = 
 	10.0.0.0/8
 	127.0.0.0/8
@@ -58,7 +57,13 @@ install_script = tools/pkglist.sh
 type = git_repo
 path = ~/sonar
 origin = https://github.com/mainsail-crew/sonar.git
-primary_branch = main
+primary_branch = master
 managed_services = sonar
 system_dependencies = resources/system-dependencies.json
+
+[update_manager klipper-conf-git]
+primary_branch = master
+type = git_repo
+path = /home/ente/git-auto-watch-installer
+origin = https://github.com/EntenPaule/klipper-conf-git.git
 

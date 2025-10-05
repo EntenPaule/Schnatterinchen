@@ -56,7 +56,7 @@ make -j $CORES KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzer
 #read -p "mcu XYE firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 #make flash KCONFIG_CONFIG=KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzero
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_rp2040_4250305031373311-if00
-echo "Finish update mcu Z"
+echo "Finish update mcu rpzero"
 #echo ""
 
 sudo service klipper start

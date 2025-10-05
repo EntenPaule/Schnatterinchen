@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 ##lrwxrwxrwx 1 root root 13 Sep 24 14:37 /dev/serial/by-id/usb-Klipper_lpc1768_02F0000F271835AECA683E53811E00F5-if00 -> ../../ttyACM0
@@ -44,6 +45,17 @@ echo ""
 #read -p "mcu XYE firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 #./scripts/flash-sdcard.sh /dev/serial/by-id/usb-Klipper_lpc1768_13FC0F0F93235253B409F34C020000F5-if00 btt-skr-v1.3
 #echo "Finish update mcu Z"
+#echo ""
+
+## Update mcu Z
+echo "Start update mcu rpzero"
+echo ""
+make clean KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzero
+make menuconfig KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzero
+make -j $CORES KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzero
+#read -p "mcu XYE firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+make flash KCONFIG_CONFIG=KCONFIG_CONFIG=/home/ente/printer_data/config/script/config.rpzero
+echo "Finish update mcu Z"
 #echo ""
 
 sudo service klipper start

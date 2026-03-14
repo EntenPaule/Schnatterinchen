@@ -32,7 +32,7 @@ subscriptions =
 	mainsail
 
 [spoolman]
-server = http://docker-spoolman.lan:7912
+server = http://docker-spoolman.lan:8083/spoolman
 sync_rate = 5
 
 [update_manager]

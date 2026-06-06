@@ -1,18 +1,20 @@
 [server]
 host = 0.0.0.0
 port = 7125
-max_upload_size = 1024
 klippy_uds_address = ~/printer_data/comms/klippy.sock
+max_upload_size = 1024
+max_websocket_connections = 10
 
 [file_manager]
-enable_object_processing = true
+queue_gcode_uploads = False
+check_klipper_config_path = True
+enable_object_processing = False
+file_system_observer = inotify
+enable_observer_warnings = True
+enable_config_write_access = True
 
 [authorization]
-cors_domains = 
-	https://mainsail.entenpaule.de
-	http://mainsail.entenpaule.de
-	https://bambuddy.entenpaule.de
-	http://mainsail
+enable_api_key = True
 trusted_clients = 
 	10.0.0.0/8
 	127.0.0.0/8
@@ -20,6 +22,13 @@ trusted_clients =
 	FE80::/10
 	FD11:7E4A:17A8::/48
 	::1/128
+cors_domains = 
+	https://mainsail.entenpaule.de
+	http://mainsail.entenpaule.de
+	https://bambuddy.entenpaule.de
+	http://mainsail
+force_logins = False
+default_source = moonraker
 
 [octoprint_compat]
 
